@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+p {
+    color: #fff;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav__top {
+    background-color: #000;
+}
+
+.nav__top_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav__top_list_item,
+.nav__top_list_item a {
+    color: #969696;
+}
+
+
+.nav__top_btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    color: #969696;
+    background-color: #000;
+    gap: 10px;
+    cursor: pointer;
+    padding: 14px 0;
+}
+
+.nav__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0F0F0F;
+}
+
+.nav__btm_right {
+    gap: 2rem;
+}
+
+.nav__btm_list {
+    gap: 2rem;
+
+}
+
+.nav__bottom_btn {
+    border: none;
+    background-color: #0F0F0F;
+    cursor: pointer;
+    padding: 31px 0;
+}
+
+.nav_btm_burger {
+    display: none;
+}
+
+.nav__btm_list_item a {
+    padding: 31px 6px;
+    color: #969696;
+}
+
+.nav__btm_list_item a:hover {
+    color: #fff;
+    transition: 0.4s;
+    background-color: #1F1F1F;
+}
+
+.hero {
+    height: 810px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/hero/Rectangle\ 3.png);
+}
+
+.hero .hero__center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 10%; */
+}
+
+.hero__rectangle {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #fff solid 4px;
+}
+
+.hero_rect_line {
+    width: 179px;
+    height: 2px;
+    /* color: #fff; */
+    background-color: #fff;
+    margin: 7px 0;
+}
+
+h3 {
+    color: #fff;
+
+}
+
+.hero__center p {
+    padding-top: 80px;
+    color: #fff;
+    text-align: center;
+}
+
+.sezon__section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sezon__left {
+    width: 50%;
+    background-color: #000;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.sezon__left h2 {
+    color: #fff;
+    padding-top: 93px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.sezon__cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card img {
+    padding: 56px 20px;
+    background-color: #191B1C;
+}
+
+.sezon__right {
+    width: 50%;
+
+    background-image: url(../images/sezon/Rectangle\ 8.png);
+    background-repeat: no-repeat;
+
+}
+
+.sezon__right .row__center {
+    padding-top: 45%;
+}
+
+.sezon__right h2 {
+    font-size: 40px;
+    color: #fff;
+}
+
+
+.sezon__right button {
+    padding: 15px 40px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.sezon__right hr {
+    width: 120px;
+}
+
+
+@media (max-width: 900px) {
+    .items {
+        display: none;
+    }
+
+    .nav_btm_burger {
+        display: block;
+        color: #fff;
+    }
+
+    .nav__btm_list {
+        display: none;
+    }
+}
